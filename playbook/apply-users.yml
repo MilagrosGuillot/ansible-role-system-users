@@ -1,0 +1,9 @@
+- name: apply-users
+  hosts: servidores
+
+  vars_files:
+    - ../inventario/users_vars/usuarios.yml
+
+  roles:
+    - system-users
+
